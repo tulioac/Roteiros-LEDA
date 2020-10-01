@@ -19,7 +19,7 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSorting<T> {
 				int j = i - 1;
 
 				while (j >= 0 && key.compareTo(array[j]) < 0) {
-					Util.swap(array, j, j + 1);
+					array[j + 1] = array[j];
 					j --;
 				}
 
