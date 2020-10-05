@@ -42,6 +42,7 @@ public class HybridMergeSort<T extends Comparable<T>> extends
 
 					merge(array, leftIndex, rightIndex);
 				} else {
+					INSERTIONSORT_APPLICATIONS += 1;
 					for (int i = leftIndex + 1; i <= rightIndex; i++) {
 						T key = array[i];
 						int j = i - 1;
